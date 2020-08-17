@@ -1,0 +1,467 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mai",
+				"main"
+			],
+			[
+				"u",
+				"updates"
+			],
+			[
+				"del",
+				"delets"
+			],
+			[
+				"extra",
+				"extra1"
+			],
+			[
+				"ex",
+				"extra1"
+			],
+			[
+				"exi",
+				"exits"
+			],
+			[
+				"Ne",
+				"Name"
+			],
+			[
+				"eta",
+				"eTAX"
+			],
+			[
+				"ne",
+				"New"
+			],
+			[
+				"m",
+				"messagebox"
+			],
+			[
+				"dele",
+				"deleteddataper"
+			],
+			[
+				"data",
+				"datac"
+			],
+			[
+				"ui",
+				"txt_uidnumber"
+			],
+			[
+				"V",
+				"Village"
+			],
+			[
+				"my",
+				"mydb"
+			],
+			[
+				"E",
+				"Entry"
+			],
+			[
+				"T",
+				"The"
+			],
+			[
+				"D",
+				"deleted"
+			],
+			[
+				"S",
+				"Successfully"
+			],
+			[
+				"N",
+				"Name"
+			],
+			[
+				"Data",
+				"database"
+			],
+			[
+				"Etax",
+				"etax2019"
+			],
+			[
+				"to",
+				"totcontaint"
+			],
+			[
+				"e",
+				"etax2019"
+			],
+			[
+				"Con",
+				"contact"
+			],
+			[
+				"txt_",
+				"txt_uidnumber"
+			],
+			[
+				"vi",
+				"txt_villagename"
+			],
+			[
+				"tx",
+				"txt_productkey"
+			],
+			[
+				"de",
+				"destroy"
+			],
+			[
+				"Ex",
+				"EXIT"
+			],
+			[
+				"sl",
+				"self"
+			],
+			[
+				"et",
+				"etax2019"
+			],
+			[
+				"me",
+				"messagebox"
+			],
+			[
+				"s",
+				"self"
+			],
+			[
+				"adm",
+				"administrator"
+			],
+			[
+				"e-",
+				"eTAX-2019"
+			],
+			[
+				"tk",
+				"tkinter"
+			],
+			[
+				"cla",
+				"calculators"
+			],
+			[
+				"so",
+				"software"
+			],
+			[
+				"con",
+				"containt"
+			],
+			[
+				"co",
+				"command"
+			],
+			[
+				"back",
+				"backs"
+			],
+			[
+				"fin",
+				"findentry1"
+			],
+			[
+				"dis",
+				"discount"
+			],
+			[
+				"su",
+				"subtotal"
+			],
+			[
+				"sh",
+				"showerror"
+			],
+			[
+				"show",
+				"showinfo"
+			],
+			[
+				"local",
+				"localtime"
+			],
+			[
+				"tot",
+				"totalcoststr"
+			],
+			[
+				"sum",
+				"sumstr"
+			],
+			[
+				"reci",
+				"receiptnumber"
+			],
+			[
+				"dat",
+				"datei"
+			],
+			[
+				"di",
+				"discount"
+			],
+			[
+				"Re",
+				"Recieptnumber"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/HP/AppData/Local/Microsoft/Windows/INetCache/IE/7J976WL8/sourcefile[1].cpp",
+		"/C/Users/HP/AppData/Local/Microsoft/Windows/INetCache/IE/1TUYO9P0/sourcefile[1].o",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Windows/System32/drivers/etc/protocol",
+		"/C/Windows/System32/drivers/etc/services",
+		"/F/android studio/sdk-tools-windows-4333796/tools/android.bat",
+		"/F/android studio/sdk-tools-windows-4333796/tools/emulator.exe",
+		"/F/android studio/android-studio-ide-183.5452501-windows.exe",
+		"/F/edd project 2019 jan/Final application/server side software etax 2019/dist/main_administrator/select.pyd",
+		"/F/mysq/mysql tutorial codes and screenshots/kalamwadi.sql",
+		"/F/mysq/mysql tutorial codes and screenshots/kalamwadi2.sql",
+		"/F/edd project 2019 jan/server side software etax 2019/main_administrator.py",
+		"/F/edd project 2019 jan/edd project modules/fully assembled software/eTAX2019.py",
+		"/F/edd project 2019 jan/Final application/server side software etax 2019/dist/main_administrator/_ctypes.pyd",
+		"/F/edd project 2019 jan/Final application/server side software etax 2019/dist/main_administrator/_tkinter.pyd",
+		"/F/edd project 2019 jan/Final application/server side software etax 2019/dist/main_administrator/api-ms-win-core-handle-l1-1-0.dll",
+		"/F/edd project 2019 jan/Final application/server side software etax 2019/dist/main_administrator/main_administrator.exe",
+		"/F/edd project 2019 jan/server side software etax 2019/update_server/workspace.py",
+		"/F/edd project 2019 jan/server side software etax 2019/mid .............. delete/deletedata.py",
+		"/F/edd project 2019 jan/server side software etax 2019/database/unknown.py",
+		"/F/edd project 2019 jan/edd project modules/view database/original/unknown.py",
+		"/F/edd project 2019 jan/edd project modules/fully assembled software/unknown.py",
+		"/F/edd project 2019 jan/edd project modules/extra/mainpage/extramainpage.py",
+		"/F/edd project 2019 jan/edd project modules/extra/online support/modificationmainpage_support.py",
+		"/F/edd project 2019 jan/edd project modules/extra/online support/modificationmainpage.py",
+		"/C/Users/HP/Desktop/sc.py",
+		"/F/edd project 2019 jan/edd project modules/extra/modifiocation main page/modificationmainpage.py",
+		"/F/edd project 2019 jan/edd project modules/extra/mod................ modify/workspace.py",
+		"/F/edd project 2019 jan/edd project modules/extra/world/original/unknown.py",
+		"/F/edd project 2019 jan/edd project modules/workspace module/workspace.py",
+		"/F/edd project 2019 jan/edd project modules/extra/mod................ modify/workspace_support.py",
+		"/F/edd project 2019 jan/server side software etax 2019/mid .............. delete - Copy/deletedata.py",
+		"/F/edd project 2019 jan/edd project modules/extra/mid .............. delete/deletedata.py",
+		"/F/edd project 2019 jan/edd project modules/extra/mod ........   access/modificationmainpage.py",
+		"/C/Users/HP/Desktop/mysqlll.py",
+		"/F/Python Project Sem 2 @ 2019/main page/mainpage.py",
+		"/F/mysq/mysql tutorial codes and screenshots/how to print specific entry by giving a idnumber or any other value.sql",
+		"/F/mysq/Gravitational waves are disturbances in the curvat",
+		"/F/edd project 2019 jan/edd project modules/extra/world/original - Copy/unknown.py",
+		"/F/edd project 2019 jan/edd project modules/extra/mainpage - Copy/extramainpage.py",
+		"/C/Users/HP/Desktop/snakify program.txt",
+		"/F/py assignments 2/occure.py",
+		"/F/py assignments 2/writefile.py",
+		"/F/mysq/1 accessing data.py",
+		"/F/00 IEEE html web developement/Codes by pranesh/loginpage.html",
+		"/C/Users/HP/Desktop/python project final/build/mainpage/Analysis-00.toc",
+		"/C/Users/HP/Desktop/python project final/__pycache__/mainpage.cpython-37.pyc",
+		"/C/Users/HP/Desktop/py pro without consol/dist/mainpage1/mainpage1.exe",
+		"/C/Users/HP/Desktop/py pro without consol/mainpage1.spec",
+		"/C/Users/HP/Desktop/py pro without consol/__pycache__/mainpage1.cpython-37.pyc",
+		"/C/Users/HP/Desktop/py pro without consol/mainpage1.pyw",
+		"/C/Users/HP/Desktop/py pro without consol/mainpage1.pyz",
+		"/F/Python Project Sem 2 @ 2019/database.py",
+		"/F/Python Project Sem 2 @ 2019/about old/about.py",
+		"/F/Python Project Sem 2 @ 2019/about.py",
+		"/F/Python Project Sem 2 @ 2019/workspace.py",
+		"/F/Python Project Sem 2 @ 2019/database old/database.py",
+		"/F/Python Project Sem 2 @ 2019/database old/database code old.py",
+		"/F/edd project 2019 jan/edd project modules/new entry/unknown.py",
+		"/F/Python Project Sem 2 @ 2019/menucard/menucard.py",
+		"/F/Python Project Sem 2 @ 2019/menucard/menucardmodule.py"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"modificationmainpage_support",
+			"workspace_support",
+			":\n",
+			"showerror",
+			"modificationmainpage_support",
+			"unknown_support",
+			"work",
+			"tk.",
+			"top",
+			"self.",
+			".configure(activebackground=\"#f9f9f9\")",
+			".configure(activeforeground=\"black\")",
+			"top",
+			"tk.",
+			"self.",
+			"support",
+			"ABOUT"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"onlinesupport_support",
+			"modifymod_support",
+			"permit_support",
+			"connect_support",
+			"",
+			"root",
+			"",
+			"root",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "eTAX2019.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

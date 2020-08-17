@@ -1,0 +1,21 @@
+ * make seperate gui for it 
+ * name : //eTAX 2019 Online Support//
+ * make boxes in GuI :
+problems
+errors
+improvements
+online data recovery
+Querries about software
+
+----imp imp imp----------
+costomers email address
+contact
+username
+
+send all data to my email address
+send reply to that costomer 
+
+
+add messageboxes
+
+destroy the window

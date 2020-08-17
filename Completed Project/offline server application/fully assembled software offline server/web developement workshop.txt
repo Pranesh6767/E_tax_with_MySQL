@@ -1,0 +1,63 @@
+tags
+
+<html>
+code in this tag is treated as html code
+<head>
+use : for backend 
+
+<title> </title>
+name of tab , heading
+
+<body>
+use : for frontend
+
+paragraph tag :
+<p>
+to display paragraph or text
+ 
+<meta tag
+used to categarise html file 
+<br> tag :
+to move to the next line in paragraph tag
+
+&nsbp;
+this tag is used for multiple spaces paragraph. beacause html doesn't allows to use multiple spaces.
+
+
+<i>  </i> tag ;
+to change the font of text to italic
+<b>  </b>
+to change the font to bold
+
+<strong> </strong>
+for special inmportance
+
+<em> </em>
+special importance but font changes to itallic
+
+<sub> </sub>
+
+<h1></h1> (upto h6)
+these are used to increase font size  
+h1 has highest font size and h6 has lowest font size
+
+
+for styling -inline
+			-internal
+			-external
+
+internal styling 
+<p style = "font-size : 44px"> this is demo of stling </p>
+	 --- for changing font of text 
+
+<p style="font-size : 40px;color: orange;background: black;"> pranesh kulkarni</p>
+		"color" is used for change color of text
+		"background" is used for background color
+		
+
+
+
+
+
+
+		

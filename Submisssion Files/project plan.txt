@@ -1,0 +1,42 @@
+project 
+EDD sem 2 final project 
+start date : 27 jan 2019
+esttimated complesion date of version 1.0.1: 28 march 2019
+
+modules 
+1. install tools 
+	1.Mysql
+	2.pip
+	3.page
+	4.tkinter
+	5.active tcl
+2.email module 
+3.creating register page by gui
+-------------------------------------------------------------------------------------------
+
+4.Coading for new registration applciation
+
+--------------------------------------------------------------------------------------------------------
+
+4.take a format of namuna no 9 and pavati pustak
+5.Collect information how to COunt Gharbhadepatti
+-----------------------------------------------------------------------------------------------------------
+imp imp imp imp imp        5.Making Query or report bug application by adding gui and email module
+------------------------------------------------------------------------------------------------------------
+
+4.creating gui based applicaion 
+5.creating sample applicatton by using page gui and mysql server ------- Estimated time : 3 days ---------
+-----------------------------------------------------------------------------------------------------------------------------
+
+6.editing sample application by additiional work ------tutorial from youutube//search how to use page gui beulder ---------
+7.adding email module to it
+8.add some more code lines to email module
+9.finallise coding of project
+
+14.make it attractive as a webpage
+
+15.create also input bar on iinterface 
+16.Finallise total project of v 1.0.1
+---------------------------------------------------------------------------------------------------------------------
+17.convert py file to executable exe file
+18.Finallise the complette edd project
