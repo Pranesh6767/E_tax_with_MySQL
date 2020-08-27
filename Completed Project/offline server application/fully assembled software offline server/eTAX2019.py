@@ -1,3 +1,38 @@
+#############     source code          #####################################
+#############     Version 2.0.1        #####################################
+#############     E-TAX - 2019                ##############################
+#############     Release Date: 27 Aug 2020   ##############################
+
+############ ++++++++++++++ MIT Copyright Statement +++++++++++++ ##########
+
+"""
+MIT License
+
+Copyright (c) 2020 Pranesh Kulkarni
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
+
+#################++++++++++++++++++++++++++++###############################
+
+######################### Importing Libraries ##############################
+
 import sys
 import tkinter
 from tkinter import messagebox
@@ -9,6 +44,28 @@ import time
 import smtplib
 import os
 from openpyxl import Workbook
+
+#################### MYSQL Credentials #####################################
+
+MYSQL_hostname = 'freedb.tech'
+MYSQL_user = 'freedb_pranesh'
+MYSQL_pass = 'Pass@123'
+MYSQL_databasename = 'freedb_etax2020'
+############################################################################
+
+#################### Python Requirements ###################################
+"""
+mysql==0.0.2
+mysql-connector==2.2.9
+mysql-connector-python==8.0.19
+mysqlclient==1.4.6
+dbConnect==2.1
+openpyxl==3.0.3
+
+"""
+
+############### +++++++ Code starts from here ++++++ #######################
+
 
 try:
     import Tkinter as tk
@@ -24,25 +81,6 @@ except ImportError:
 
 import unknown_support
 from tkinter import*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -86,32 +124,6 @@ def main():                                       # here the main application st
         w = None
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -187,7 +199,7 @@ def main():                                       # here the main application st
               i=str(i)
               k=i
 
-              database = DBConnect(host='localhost',user='root',password='Pass@123',database='etax2019')
+              database = DBConnect(host=MYSQL_hostname,user=MYSQL_user,password=MYSQL_pass,database=MYSQL_databasename)
               new_user = {'idnumber': a,'meternumber': c,'wardnumber': d,'name': b,'housetax': e,'healthtax': f,'lighttax': g,'watertax': h,'total': i,'rest': k}
               database.insert(new_user,'kalamwadiinfo')
               tkinter.messagebox.showinfo('etax-2019','Data was entered successfully')
@@ -774,7 +786,7 @@ def main():                                       # here the main application st
 
             def viewnames(self):
                 try :
-                    mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                    mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                 except :
                     tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
                 
@@ -788,7 +800,7 @@ def main():                                       # here the main application st
 
             def viewalls(self):
                 try :
-                    mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                    mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                 except :
                     tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
                 
@@ -846,7 +858,7 @@ def main():                                       # here the main application st
 
                 totalx=float(u)
                 p=str(t-u)
-                mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                 mycursor=mydb.cursor()
                 query = ("SELECT rest FROM kalamwadiinfo where idnumber ="+a)
                 mycursor.execute(query)
@@ -858,7 +870,7 @@ def main():                                       # here the main application st
                     privrest=str(privrest)
 
 
-                mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                 mycursor=mydb.cursor()
                 query = ("SELECT rec FROM kalamwadirec")
                 mycursor.execute(query)
@@ -879,10 +891,10 @@ def main():                                       # here the main application st
                 if (a=="") or (b=="") or (c=="") or (d=="") or (e=="") or (f=="") or (g=="") or (h=="") or (i=="") or (j=="") or (k=="") or (l=="") or (m=="") or (n=="") or (o=="") :
                     tkinter.messagebox.showerror("eTAX-2019","Kindly Fill All Details")
                 else :
-                    database = DBConnect(host='localhost',user='root',password='Pass@123',database='etax2019')
+                    database = DBConnect(host=MYSQL_hostname,user=MYSQL_user,password=MYSQL_pass,database=MYSQL_databasename)
                     new_user = {'idnumber': a,'meternumber': c,'wardnumber': d,'name': b,'housetax': e,'healthtax': f,'lighttax': g,'watertax': h,'total': i,'reciptnumber':j,'housetaxpaid':k,'healthtaxpaid':l,'lighttaxpaid':m,'watertaxpaid':n,'totalpaid':o,'rest':p,'datei': localtime}
                     database.insert(new_user,'kalamwadi')
-                    mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                    mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                     mycursor=mydb.cursor()
                     query=("update kalamwadiinfo set rest = %s where idnumber = %s" %(privrest,a))
                     mycursor.execute(query)
@@ -913,7 +925,7 @@ def main():                                       # here the main application st
                 id=str(self.txt_findid.get());
                 if id=="":
                     tkinter.messagebox.showerror('eTAX-2019','Please Enter id number')
-                mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                 mycursor=mydb.cursor()
                 query = ("SELECT idnumber, meternumber, wardnumber, name, housetax, healthtax, lighttax, watertax, total, rest FROM kalamwadiinfo WHERE idnumber = "+id)
                 mycursor.execute(query)
@@ -922,7 +934,7 @@ def main():                                       # here the main application st
                     self.taxbox.insert(0,s)
 
 
-                mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                 mycursor=mydb.cursor()
                 query = ("SELECT idnumber, meternumber, wardnumber, name, housetax, healthtax, lighttax, watertax, total FROM kalamwadiinfo WHERE idnumber = "+id)
                 mycursor.execute(query)
@@ -2055,7 +2067,7 @@ def main():                                       # here the main application st
 
             def exports(self):
                 try :
-                    mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                    mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                 except :
                     tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
 
@@ -2088,7 +2100,7 @@ def main():                                       # here the main application st
 
             def viewnames(self):
                 try:
-                    mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                    mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                     mycursor=mydb.cursor()
                     query = ("SELECT idnumber, meternumber, wardnumber, name, housetax, healthtax, lighttax, watertax, total, reciptnumber, housetaxpaid, healthtaxpaid, lighttaxpaid, watertaxpaid, totalpaid, rest FROM kalamwadi")
                     mycursor.execute(query)
@@ -2099,7 +2111,7 @@ def main():                                       # here the main application st
                     msg= tkinter.messagebox.showerror("eTAX-2019",'Server Connection Failed Please Try To reconnect. If problem Continues, contact Administrator.')
 
             def viewalls(self):
-                mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                 mycursor=mydb.cursor()
                 query = ("SELECT idnumber, meternumber, wardnumber, name, housetax, healthtax, lighttax, watertax, total, reciptnumber, housetaxpaid, healthtaxpaid, lighttaxpaid, watertaxpaid, totalpaid, rest, datei FROM kalamwadi")
                 mycursor.execute(query)
@@ -2112,7 +2124,7 @@ def main():                                       # here the main application st
 
             def viewtotals(self):
                 try :
-                    mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                    mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                 except :
                     tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
                 mycursor=mydb.cursor()
@@ -3038,7 +3050,7 @@ def main():                                       # here the main application st
                         msg=tkinter.messagebox.showerror("etax2019","Please Enter villagename")
 
                     try :
-                        mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                        mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                     except :
                         tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
                     
@@ -3056,7 +3068,7 @@ def main():                                       # here the main application st
                     if (vill == ""):
                         msg=tkinter.messagebox.showerror("etax2019","Please Enter villagename")
                     try :
-                        mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                        mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                     except :
                         tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
                     mycursor=mydb.cursor()
@@ -3079,7 +3091,7 @@ def main():                                       # here the main application st
 
 
                     try :
-                        mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                        mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                     except :
                         tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
                     mycursor=mydb.cursor()
@@ -3090,7 +3102,7 @@ def main():                                       # here the main application st
                         self.box2o1.insert(0,s)
 
                     try :
-                        mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                        mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                     except :
                         tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
                     mycursor=mydb.cursor()
@@ -5267,7 +5279,7 @@ def main():                                       # here the main application st
                         p=str(t-u)
 
 
-                        database = DBConnect(host='localhost',user='root',password='Pass@123',database='etax2019')
+                        database = DBConnect(host=MYSQL_hostname,user=MYSQL_user,password=MYSQL_pass,database=MYSQL_databasename)
                         new_user = {'village':v,'idnumber': a,'meternumber': c,'wardnumber': d,'name': b,'housetax': e,'healthtax': f,'lighttax': g,'watertax': h,'total': i,'reciptnumber':j,'housetaxpaid':k,'healthtaxpaid':l,'lighttaxpaid':m,'watertaxpaid':n,'totalpaid':o,'rest':p, 'datei':localtime}
                         database.insert(new_user,'updateddata')
                         database.commit()
@@ -5957,7 +5969,7 @@ def main():                                       # here the main application st
 
                         t=str(time.asctime(time.localtime(time.time())))
 
-                        mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                        mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
                         mycursor=mydb.cursor()
                         query=("INSERT INTO deleteddata (village, uidnumber, name)VALUES(%s,%s,%s)")
                         datac=(v,u,n)
@@ -7509,7 +7521,7 @@ class loginpage:
         password1=self.Entry2.get();           # taking password input
         try :
             u='\''+name+'\''
-            mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+            mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
             mycursor=mydb.cursor()
             query = ("SELECT password FROM passwords WHERE username ="+u)
             mycursor.execute(query)

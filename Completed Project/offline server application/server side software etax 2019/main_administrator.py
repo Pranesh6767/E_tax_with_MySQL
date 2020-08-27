@@ -1,3 +1,73 @@
+#############     source code          #####################################
+#############     Version 2.0.1        #####################################
+#############     E-TAX - 2019 - serverside   ##############################
+#############     Release Date: 27 Aug 2020   ##############################
+
+############ ++++++++++++++ MIT Copyright Statement +++++++++++++ ##########
+
+"""
+MIT License
+
+Copyright (c) 2020 Pranesh Kulkarni
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
+
+#################++++++++++++++++++++++++++++###############################
+
+######################### Importing Libraries ##############################
+
+import sys
+import tkinter
+from tkinter import messagebox
+import mysql.connector
+import dbConnect
+from dbConnect import DBConnect
+import mysql.connector
+import time
+import smtplib
+import os
+from openpyxl import Workbook
+
+#################### MYSQL Credentials #####################################
+
+MYSQL_hostname = 'freedb.tech'
+MYSQL_user = 'freedb_pranesh'
+MYSQL_pass = 'Pass@123'
+MYSQL_databasename = 'freedb_etax2020'
+############################################################################
+
+#################### Python Requirements ###################################
+"""
+mysql==0.0.2
+mysql-connector==2.2.9
+mysql-connector-python==8.0.19
+mysqlclient==1.4.6
+dbConnect==2.1
+openpyxl==3.0.3
+
+"""
+
+############### +++++++ Code starts from here ++++++ #######################
+
+
+
 def view():
     import sys
     import mysql.connector
@@ -42,7 +112,7 @@ def view():
     class Toplevel1:
         def delets(self):
             try :
-                mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
             except :
                 tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
             
@@ -55,7 +125,7 @@ def view():
 
         def updates(self):
             try :
-                mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+                mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
             except :
                 tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
             
@@ -555,20 +625,20 @@ def delete():
             n=str(self.txt_name.get());
             u=str(self.txt_uidnumber.get());
 
-            mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+            mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
             mycursor=mydb.cursor()
             query=("INSERT INTO deleteddataper (village, uidnumber, name)VALUES(%s,%s,%s)")
             datac=(v,u,n)
             mycursor.execute(query,datac)
             mydb.commit()
 
-            mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+            mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
             mycursor=mydb.cursor()
             query=("DELETE from deleteddata where uidnumber = %s" %(u))
             mycursor.execute(query)
             mydb.commit()
 
-            mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+            mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
             mycursor=mydb.cursor()
             query=("DELETE from %s where idnumber = %s" %(v,u))
             mycursor.execute(query)
@@ -934,26 +1004,26 @@ def update():
             p=str(t-u)
 
 
-            mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+            mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
             mycursor=mydb.cursor()
             query=("DELETE from updateddata where idnumber = %s" %(a))
             mycursor.execute(query)
             mydb.commit()
 
-            mydb=mysql.connector.connect(host='localhost',user='root',passwd='Pass@123',database='etax2019')
+            mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
             mycursor=mydb.cursor()
             query=("DELETE from %s where idnumber = %s" %(v,a))
             mycursor.execute(query)
             mydb.commit()
 
 
-            database = DBConnect(host='localhost',user='root',password='Pass@123',database='etax2019')
+            database = DBConnect(host=MYSQL_hostname,user=MYSQL_user,password=MYSQL_pass,database=MYSQL_databasename)
             new_user = {'village':v,'idnumber': a,'meternumber': c,'wardnumber': d,'name': b,'housetax': e,'healthtax': f,'lighttax': g,'watertax': h,'total': i,'reciptnumber':j,'housetaxpaid':k,'healthtaxpaid':l,'lighttaxpaid':m,'watertaxpaid':n,'totalpaid':o,'rest':p,'datei': localtime}
             database.insert(new_user,'updateddataper')
             mydb.commit()
 
 
-            database = DBConnect(host='localhost',user='root',password='Pass@123',database='etax2019')
+            database = DBConnect(host=MYSQL_hostname,user=MYSQL_user,password=MYSQL_pass,database=MYSQL_databasename)
             new_user = {'idnumber': a,'meternumber': c,'wardnumber': d,'name': b,'housetax': e,'healthtax': f,'lighttax': g,'watertax': h,'total': i,'reciptnumber':j,'housetaxpaid':k,'healthtaxpaid':l,'lighttaxpaid':m,'watertaxpaid':n,'totalpaid':o,'rest':p,'datei': localtime}
             database.insert(new_user,v)
             mydb.commit()
