@@ -114,8 +114,8 @@ def view():
             try :
                 mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
             except :
-                tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
-            
+                tkinter.messagebox.showerror('etax-2020','Failed to connect server, Please contact your administrator')
+
             mycursor=mydb.cursor()
             query = ("SELECT village, uidnumber, name FROM deleteddata")
             mycursor.execute(query)
@@ -127,8 +127,8 @@ def view():
             try :
                 mydb=mysql.connector.connect(host=MYSQL_hostname,user=MYSQL_user,passwd=MYSQL_pass,database=MYSQL_databasename)
             except :
-                tkinter.messagebox.showerror('etax-2019','Failed to connect server, Please contact your administrator')
-            
+                tkinter.messagebox.showerror('etax-2020','Failed to connect server, Please contact your administrator')
+
             mycursor=mydb.cursor()
             query = ("SELECT village,idnumber, meternumber, wardnumber, name, housetax, healthtax, lighttax, watertax, total, reciptnumber, housetaxpaid, healthtaxpaid, lighttaxpaid, watertaxpaid, totalpaid, rest FROM updateddata")
             mycursor.execute(query)
@@ -192,7 +192,7 @@ def view():
             self.Label1_1.configure(foreground="#2212ff")
             self.Label1_1.configure(highlightbackground="#d9d9d9")
             self.Label1_1.configure(highlightcolor="black")
-            self.Label1_1.configure(text='''2019''')
+            self.Label1_1.configure(text='''2020''')
 
             self.Label2 = tk.Label(top)
             self.Label2.place(relx=0.073, rely=0.11, height=31, width=141)
@@ -241,7 +241,7 @@ def view():
             self.Label3.configure(foreground="#000000")
             self.Label3.configure(highlightbackground="#d9d9d9")
             self.Label3.configure(highlightcolor="black")
-            self.Label3.configure(text='''etax-2019''')
+            self.Label3.configure(text='''etax-2020''')
 
             self.Label3_3 = tk.Label(top)
             self.Label3_3.place(relx=0.013, rely=0.987, height=21, width=34)
@@ -611,7 +611,7 @@ def delete():
 
     class e_TAX_2019:
         def exits(self):
-            msg=tkinter.messagebox.askyesno("e-TAX 2019","Do You Want To EXIT ?")
+            msg=tkinter.messagebox.askyesno("e-TAX 2020","Do You Want To EXIT ?")
             if msg :
                 exit()
 
@@ -644,7 +644,7 @@ def delete():
             mycursor.execute(query)
             mydb.commit()
 
-            tkinter.messagebox.showinfo("etax2019","Data Successfully Deleted")
+            tkinter.messagebox.showinfo("etax2020","Data Successfully Deleted")
 
 
         def __init__(self, top=None):
@@ -661,7 +661,7 @@ def delete():
             font15 = "-family {Rockwell Extra} -size 18 -weight bold"
 
             top.geometry("843x469+274+133")
-            top.title("e-TAX 2019")
+            top.title("e-TAX 2020")
             top.configure(background="#727272")
             top.configure(highlightbackground="#d9d9d9")
             top.configure(highlightcolor="black")
@@ -699,7 +699,7 @@ def delete():
             self.Label1_1.configure(foreground="#ff2b0a")
             self.Label1_1.configure(highlightbackground="#d9d9d9")
             self.Label1_1.configure(highlightcolor="black")
-            self.Label1_1.configure(text='''2019''')
+            self.Label1_1.configure(text='''2020''')
 
             self.Label2 = tk.Label(self.Frame1)
             self.Label2.place(relx=0.156, rely=0.621, height=31, width=184)
@@ -967,7 +967,7 @@ def update():
     class Toplevel1:
 
         def exits(self):
-            msg=tkinter.messagebox.askyesno('etax-2019','Do You Want To Exit ?');
+            msg=tkinter.messagebox.askyesno('etax-2020','Do You Want To Exit ?');
             if(msg):
                 exit()
 
@@ -1030,7 +1030,7 @@ def update():
 
 
 
-            messagebox.showinfo("etax-2019","Data Updated Successfully")
+            messagebox.showinfo("etax-2020","Data Updated Successfully")
 
 
 
@@ -1073,7 +1073,7 @@ def update():
             self.Label1_1.configure(foreground="#2212ff")
             self.Label1_1.configure(highlightbackground="#d9d9d9")
             self.Label1_1.configure(highlightcolor="black")
-            self.Label1_1.configure(text='''2019''')
+            self.Label1_1.configure(text='''2020''')
 
             self.Label2 = tk.Label(top)
             self.Label2.place(relx=0.105, rely=0.123, height=31, width=141)
@@ -1586,7 +1586,7 @@ def update():
 
 
 def main():
-    print("Welcome To E-tax 2019 Administrator Software\n")
+    print("Welcome To E-tax 2020 Administrator Software\n")
     print("*************"*10)
     print("\n\n\n\n")
     a=str(input("Please Enter the Password.................."))
@@ -1606,5 +1606,3 @@ def main():
 
 print("welcome")
 main()
-
-
