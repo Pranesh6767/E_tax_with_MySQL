@@ -48,9 +48,9 @@ from openpyxl import Workbook
 #################### MYSQL Credentials #####################################
 
 MYSQL_hostname = 'freedb.tech'
-MYSQL_user = 'freedb_pranesh'
+MYSQL_user = 'freedbtech_pranesh'
 MYSQL_pass = 'Pass@123'
-MYSQL_databasename = 'freedb_etax2020'
+MYSQL_databasename = 'freedbtech_etax2020'
 ############################################################################
 
 #################### Python Requirements ###################################

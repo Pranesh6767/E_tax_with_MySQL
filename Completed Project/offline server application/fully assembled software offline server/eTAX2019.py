@@ -48,9 +48,9 @@ from openpyxl import Workbook
 #################### MYSQL Credentials #####################################
 
 MYSQL_hostname = 'freedb.tech'
-MYSQL_user = 'freedb_pranesh'
+MYSQL_user = 'freedbtech_pranesh'
 MYSQL_pass = 'Pass@123'
-MYSQL_databasename = 'freedb_etax2020'
+MYSQL_databasename = 'freedbtech_etax2020'
 ############################################################################
 
 #################### Python Requirements ###################################
@@ -648,59 +648,6 @@ def main():                                       # here the main application st
 
         if __name__ == '__main__':
             vp_start_gui()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1945,71 +1892,6 @@ def main():                                       # here the main application st
 
 
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def viewentry1():         # view all entries
 
         import sys
@@ -2860,50 +2742,6 @@ def main():                                       # here the main application st
 
         if __name__ == '__main__':
             vp_start_gui()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -3854,26 +3692,6 @@ def main():                                       # here the main application st
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         def calculator1():
             window=Tk()
             window.title("welcome")
@@ -3885,83 +3703,8 @@ def main():                                       # here the main application st
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         """---------------------------------------------calculator module """
         #-------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -4714,22 +4457,6 @@ def main():                                       # here the main application st
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         def update1():
             import sys
             import tkinter
@@ -4782,25 +4509,6 @@ def main():                                       # here the main application st
                 global w
                 w.destroy()
                 w = None
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -5147,25 +4855,6 @@ def main():                                       # here the main application st
 
                 if __name__ == '__main__':
                     vp_start_gui()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -5867,29 +5556,6 @@ def main():                                       # here the main application st
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             def delete1():
 
                 import sys
@@ -6203,30 +5869,6 @@ def main():                                       # here the main application st
 
                 if __name__ == '__main__':
                     vp_start_gui()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -7062,69 +6704,6 @@ def main():                                       # here the main application st
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     class Main:
         def newdatas(self):
             root.destroy()
@@ -7483,11 +7062,6 @@ def main():                                       # here the main application st
 
 
 
-
-
-
-
-
 def vp_start_gui():
     '''Starting point when module is the main routine.'''
     global val, w, root
@@ -7722,8 +7296,3 @@ class loginpage:
 
 if __name__ == '__main__':
     vp_start_gui()
-
-
-
-
-
