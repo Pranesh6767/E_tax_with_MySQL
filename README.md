@@ -17,3 +17,4 @@ https://etax20194.webnode.com/
 ### V 2.0.1 (Release Date - 27 Aug 2020)
 > [Download](https://drive.google.com/file/d/1QnF4ixqfDnZXye-It64DH9wCPZYRT7-V/view?usp=sharing)
 
+### *Note: Windows Support has been closed for next versions of the software
