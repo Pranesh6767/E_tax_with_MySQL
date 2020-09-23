@@ -24,7 +24,9 @@ https://etax20194.webnode.com/
 
 ## Requirements:
 mysql-connector==2.2.9
+
 dbConnect==2.1
+
 openpyxl==3.0.3
 
 ### V 2.0.3 (Release Date - 22 Sep 2020)
