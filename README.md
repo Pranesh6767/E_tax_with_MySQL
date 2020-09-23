@@ -18,3 +18,14 @@ https://etax20194.webnode.com/
 > [Download](https://drive.google.com/file/d/1QnF4ixqfDnZXye-It64DH9wCPZYRT7-V/view?usp=sharing)
 
 ### *Note: Windows Support has been closed for next versions of the software
+
+## Python Source Codes
+## *Note: Python Requirements Should be installed
+
+## Requirements:
+mysql-connector==2.2.9
+dbConnect==2.1
+openpyxl==3.0.3
+
+### V 2.0.3 (Release Date - 22 Sep 2020)
+> [Download](https://drive.google.com/file/d/1bbJTgXt0dk5K5gql41CziRGAvULqPYfZ/view?usp=sharing)
