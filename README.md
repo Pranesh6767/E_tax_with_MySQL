@@ -1,5 +1,5 @@
 # E_tax_with_MySQL
-## An Amazing Online taxation software.
+## The Online taxation software.
 
 ## Author
 ### Pranesh Kulkarni.
